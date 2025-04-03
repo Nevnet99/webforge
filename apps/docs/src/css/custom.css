@@ -1,0 +1,31 @@
+/**
+ * WebForge custom global styles.
+ * Based on accessible, brand-aligned colors.
+ */
+
+ :root {
+  --ifm-color-primary: #4F46E5;              /* Indigo 600 */
+  --ifm-color-primary-dark: #4338CA;         /* Indigo 700 */
+  --ifm-color-primary-darker: #3730A3;       /* Indigo 800 */
+  --ifm-color-primary-darkest: #312E81;      /* Indigo 900 */
+  --ifm-color-primary-light: #6366F1;        /* Indigo 500 */
+  --ifm-color-primary-lighter: #818CF8;      /* Indigo 400 */
+  --ifm-color-primary-lightest: #A5B4FC;     /* Indigo 300 */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #A78BFA;              /* Violet 400 */
+  --ifm-color-primary-dark: #8B5CF6;         /* Violet 500 */
+  --ifm-color-primary-darker: #7C3AED;       /* Violet 600 */
+  --ifm-color-primary-darkest: #6D28D9;      /* Violet 700 */
+  --ifm-color-primary-light: #C4B5FD;        /* Violet 300 */
+  --ifm-color-primary-lighter: #DDD6FE;      /* Violet 200 */
+  --ifm-color-primary-lightest: #EDE9FE;     /* Violet 100 */
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+}
+
+
