@@ -1,50 +1,58 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
+/* CSS RESET FROM https://x.com/souporserious/status/1907525404359012567 Thanks! */
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  min-width: 0;
+  text-box: trim-both cap alphabetic;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  interpolate-size: allow-keywords;
 }
 
-.imgDark {
-  display: none;
+body {
+  min-height: 100dvh;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  .imgLight {
-    display: none;
-  }
-  .imgDark {
-    display: unset;
-  }
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+@theme {
+  --color-bg: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-surface-alt: #F3F4F6;
+  --color-primary: #4F46E5;
+  --color-secondary: #8B5CF6;
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  --color-bg-dark: #121212;
+  --color-surface-dark: #1E1E1E;
+  --color-surface-alt-dark: #2A2A2A;
+  --color-primary-dark: #6366F1;
+  --color-secondary-dark: #A78BFA;
+  --color-text-dark: #F3F4F6;
+  --color-muted-dark: #9CA3AF;
+  --color-border-dark: #2D2D2D;
+  --color-success-dark: #34D399;
+  --color-warning-dark: #FBBF24;
+  --color-error-dark: #F87171;
+}
+
+
+
